@@ -11,4 +11,6 @@ export class ButtonComponent {
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas);
   }
+
+  // Use the names for the inputs `buttonText` and `iconName`.
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {
-  FormBuilder
+  FormBuilder, FormGroup
 } from '@angular/forms';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -14,4 +14,6 @@ export class CourseFormComponent {
   constructor(public fb: FormBuilder, public library: FaIconLibrary) {
     library.addIconPacks(fas);
   }
+  courseForm!: FormGroup;
+  // Use the names `title`, `description`, `author`, 'authors' (for authors list), `duration` for the form controls.
 }
